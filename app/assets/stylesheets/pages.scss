@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .index-page-bg{
   background-color: #FAFBFD;
+  min-height: 100vh
 }
 header#body-up{
   margin-top: -10px;
@@ -10,7 +11,7 @@ header#body-up{
     display: flex;
     justify-content: center;
     .header-content-inner{
-      margin-top: 50px;
+      margin-top: 60px;
       display: flex;
       align-items: center;
       .left-text{
@@ -21,31 +22,23 @@ header#body-up{
         text-align: center;
         h1#homeHeading{
           font-family: 'Roboto';
-          font-size: 70px;
+          font-size: 60px;
           font-weight: 700;
           line-height: 85px;
           margin: 0;
-          margin-bottom: 30px;
+          margin-bottom: 15px;
+          margin-top: -10px;
           color: black;
           span{
             color: #1954FF;
-            font-size: 90px;
+            font-size: 80px;
           }
         }
-        a{
-          background-color: white;
-          border-radius: 50px;
-          border: 2px solid black;
-          color: black;
-          width: 45%;
-          font-weight: 500;
-          padding: 8px 25px;
-          text-decoration: none;
-          &:hover{
-            color: white;
-            background-color: #1954FF;
-            border-color: #1954FF;
-          }
+        p{
+          font-family: 'Roboto';
+          font-size: 25px;
+          color: #4A4A4A;
+          margin: 0;
         }
         @media (max-width: 500px){
           a{
@@ -181,6 +174,10 @@ aside.body-down{
         font-size: 50px;
         color: #333333;
       }
+      img{
+        width: 57px;
+        margin-top: -20px;
+      }
       h3{
         color: #2A5FF6;
       }
@@ -190,3 +187,52 @@ aside.body-down{
     }
   }
 }
+.button-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btn-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      margin: 30px 0 50px;
+      padding: 12px 80px;
+      // background-color: #235BF6;
+      color: white;
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 5px;
+      text-decoration: none;
+      background-color: #2A5FF6;
+      border: 1px solid #2A5FF6;
+      &:hover{
+        background-color: #1142CC;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
