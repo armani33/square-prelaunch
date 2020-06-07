@@ -1,0 +1,64 @@
+<%= render "shared/navbar" %>
+<div class="index-page-bg">
+  <!-- Page Conent -->
+  <header id="body-up">
+    <div class="header-content">
+      <div class="header-content-inner">
+        <div class="left-text">
+          <h1 id="homeHeading">Connect around<br><span>Live Stream</span></h1>
+          <p>A new way to experience livestream for both artists and participants.</p>
+        </div>
+        <%= image_tag('Webapp.png', class: "webapp") %>
+      </div>
+    </div>
+  </header>
+
+  <aside class="body-down">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <!-- <h1 id="homeHeading">Always find virtual things to do!</h1> -->
+          <hr class="primary">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 text-center">
+          <div class="service-box">
+            <%= link_to root_path do %>
+              <i class="fas fa-link"></i>
+              <h3>Embed Your Live</h3>
+            <% end %>
+            <p class="text-faded">You can search virtual events by name or categories!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <div class="service-box">
+            <%= link_to root_path do %>
+              <i class="fas fa-share"></i>
+              <h3>Share Your Link </h3>
+            <% end %>
+            <p class="text-faded">Create your own virtual events and start earning money!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <div class="service-box">
+            <%= link_to root_path do %>
+              <i class="fa fa-4x fa-user-plus"></i>
+              <h3>Connect With Your Fan</h3>
+            <% end %>
+            <p class="text-faded">Find and attend virtual events which you're interested in!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <hr class="primary">
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
