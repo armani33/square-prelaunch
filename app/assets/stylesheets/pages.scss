@@ -168,18 +168,35 @@ header#body-up{
 
 aside.body-down{
   margin-top: -20px;
+  hr.primary{
+    background-color: #F5F7FA;
+  }
   .service-box{
+    p{
+      margin-bottom: 5px;
+      img.youtube-icon{
+        width: 75px;
+        margin-bottom: 5px;
+      }
+      img.fb-icon{
+        width: 75px;
+        margin-bottom: 4px;
+      }
+    }
     a{
       i{
         font-size: 50px;
         color: #333333;
+        padding: 10px 0 20px;
       }
       img{
-        width: 57px;
-        margin-top: -20px;
+        width: 60px;
+        margin-top: -25px;
+        padding: 10px 0 20px;
       }
       h3{
         color: #2A5FF6;
+        padding: 5px 0 10px;
       }
       &:hover{
         color: #2A5FF6;
@@ -196,7 +213,7 @@ aside.body-down{
     display: flex;
     align-items: center;
     justify-content: center;
-    a{
+    button{
       margin: 30px 0 50px;
       padding: 12px 80px;
       // background-color: #235BF6;
@@ -216,14 +233,26 @@ aside.body-down{
 }
 
 
+.modal-header{
+  div{
+    h4{
+
+    }
+    p{
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
 
 
-
-
-
-
-
-
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem 1rem !important;
+  border: 1px solid transparent !important;
+}
 
 
 

@@ -1,5 +1,5 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+<nav id="mainNav">
+  <div class="nav-container">
     <div class="navbar-header">
       <div class='left-side-nav'>
         <%= link_to root_path, class: "navbar-brand-link" do %>
@@ -8,8 +8,12 @@
         <% end %>
       </div>
     </div>
-    <div class="right-side-nav navbar-right">
-      <%= link_to "Connect Your Live", root_path %></li>
+    <div class="right-side-nav">
+      <button type="button" class=" btn btn-dark" data-toggle="modal" data-target="#subscribeModal">
+        Connect Your Live
+      </button>
     </div>
   </div>
 </nav>
+
+
