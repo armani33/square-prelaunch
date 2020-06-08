@@ -261,6 +261,117 @@ aside.body-down{
 
 
 
+// MOBILE
+
+
+.index-container-mobile{
+  background-color: #FAFBFD;
+  .page-1-index-mobile{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      width: 300px;
+    }
+    .text{
+      margin-top: 20px;
+      text-align: center;
+      h1{
+        font-family: 'Roboto';
+        font-size: 38px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 15px;
+        margin-top: -10px;
+        color: black;
+        text-align: center;
+        span{
+          color: #1954FF;
+          font-size: 50px;
+        }
+      }
+      p{
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 17px;
+        color: #4A4A4A;
+        margin: 0;
+      }
+      button{
+        margin: 30px 0 50px;
+        padding: 6px 65px;
+        color: white;
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 5px;
+        text-decoration: none;
+        background-color: #2A5FF6;
+        border: 1px solid #2A5FF6;
+        &:hover{
+          background-color: #1142CC;
+        }
+      }
+    }
+  }
+  .page-2-index-mobile{
+    .page-2-index-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .service-box{
+        text-align: center;
+        margin-bottom: 30px;
+        p{
+          margin-bottom: 5px;
+          img.youtube-icon{
+            width: 75px;
+            margin-bottom: 5px;
+          }
+          img.fb-icon{
+            width: 75px;
+            margin-bottom: 4px;
+          }
+        }
+        a{
+          i{
+            font-size: 40px;
+            color: #333333;
+            padding: 10px 0;
+          }
+          img{
+            width: 50px;
+            padding: 10px 0;
+          }
+          h3{
+            color: #2A5FF6;
+            padding: 5px 0 10px;
+          }
+          &:hover{
+            color: #2A5FF6;
+          }
+        }
+      }
+      button{
+        margin: 30px 0 50px;
+        padding: 6px 65px;
+        color: white;
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 5px;
+        text-decoration: none;
+        background-color: #2A5FF6;
+        border: 1px solid #2A5FF6;
+        &:hover{
+          background-color: #1142CC;
+        }
+      }
+    }
+  }
+}
+
 
 
 

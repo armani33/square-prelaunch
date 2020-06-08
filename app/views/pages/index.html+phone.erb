@@ -1,1 +1,69 @@
 <%= render "shared/navbar-mobile" %>
+
+<div class="index-container-mobile">
+  <div class="page-1-index-mobile">
+    <%= image_tag('Webapp.png', class: "webapp") %>
+    <div class="text">
+      <h1>Connect around<br><span>Live Stream</span></h1>
+      <p>A new way to experience livestream<br>for both artists and participants.</p>
+      <button type="button" class=" btn btn-dark" data-toggle="modal" data-target="#subscribeModal">
+        Get early access
+      </button>
+    </div>
+  </div>
+
+  <div class="page-2-index-mobile">
+    <div class="page-2-index-content">
+      <div class="service-box">
+        <%= link_to root_path do %>
+          <i class="fas fa-link"></i>
+          <h3>Embed Your Live</h3>
+        <% end %>
+        <p class="text-faded">Embed your live from <%= image_tag('youtube.png', class: "youtube-icon") %> or <%= image_tag('facebook.png', class: "fb-icon") %> easily!</p>
+      </div>
+      <div class="service-box">
+        <%= link_to root_path do %>
+          <i class="fas fa-share"></i>
+          <h3>Share Your Link </h3>
+        <% end %>
+        <p class="text-faded">Share Your SquareParty Link to people!</p>
+      </div>
+      <div class="service-box">
+        <%= link_to root_path do %>
+          <%= image_tag('dancing-icon.png', class: "dancing-icon") %>
+          <h3>Connect With Your Fan</h3>
+        <% end %>
+        <p class="text-faded">See participant dance around your Stream<br>and connect with them!</p>
+      </div>
+      <button type="button" class=" btn btn-dark" data-toggle="modal" data-target="#subscribeModal">
+        Get early access
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h4 class="modal-title">Be the first to know when we launch 🎉</h4>
+              <p>Subscribe and get the privilege to try our beta soon ✌️</p>
+            </div>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;
+            </span></button>
+          </div>
+          <div class="modal-body">
+            <%= form_tag users_path, method: :post, :class => "form-horizontal" do %>
+            <% label_tag 'email', 'Enter email', :class => 'control-label' %>
+            <%= email_field_tag :email, "", placeholder: "Enter Email", :class => "form-control" %>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button> -->
+               <%= submit_tag "Subscribe", name: nil, class: "btn btn-block btn-primary" %>
+            <% end %>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
