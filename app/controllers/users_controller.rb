@@ -15,5 +15,5 @@ end
 private
 
 def user_params
-  params.permit(:email)
+  params.permit(:email, :insta_username, :user_type)
 end

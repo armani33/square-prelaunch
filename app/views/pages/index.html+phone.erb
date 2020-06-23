@@ -33,11 +33,9 @@
           <%= image_tag('dancing-icon.png', class: "dancing-icon") %>
           <h3>Connect With Your Fan</h3>
         <% end %>
-        <p class="text-faded">See participant dance around your Stream<br>and connect with them!</p>
+        <p class="text-faded">See participants dance around your Stream<br>and connect with them!</p>
       </div>
-      <button type="button" class=" btn btn-dark" data-toggle="modal" data-target="#subscribeModal">
-        Get early access
-      </button>
+      <button type="button" class=" btn btn-dark" data-toggle="modal" data-target="#subscribeModal">Try our demo</button>
     </div>
   </div>
 
@@ -54,9 +52,16 @@
             </span></button>
           </div>
           <div class="modal-body">
-            <%= form_tag users_path, method: :post, :class => "form-horizontal" do %>
-            <% label_tag 'email', 'Enter email', :class => 'control-label' %>
-            <%= email_field_tag :email, "", placeholder: "Enter Email", :class => "form-control" %>
+            <%= form_tag users_path, method: :post, :class => "form-horizontal list-group" do %>
+
+              <% label_tag 'insta_username', 'Enter email', :class => 'control-label' %>
+              <%= text_field_tag :insta_username, "", placeholder: "Enter Instagram Username", :class => "list-group-item" %>
+
+              <% label_tag 'email', 'Enter email', :class => 'control-label' %>
+              <%= email_field_tag :email, "", placeholder: "Enter Email", :class => " list-group-item" %>
+
+              <% label_tag 'user_type', 'Enter email', :class => 'list-group-item' %>
+              <%= select_tag :user_type, raw("<option>Artist</option><option>Event Promoter</option><option>participants</option>"), class: 'list-group-item' %>
           </div>
           <div class="modal-footer">
             <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button> -->
