@@ -13,7 +13,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use PostGres as the database
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 # Bootstrap
 gem "bootstrap", ">= 4.3.1"
 # Use SCSS for stylesheets
